@@ -382,6 +382,7 @@ class Configuration implements ConfigurationInterface
     protected function addFieldConfig($node, $nestings)
     {
         $node
+            ->scalarNode('__transformer')->end()
             ->scalarNode('type')->defaultValue('string')->end()
             ->scalarNode('boost')->end()
             ->scalarNode('store')->end()
