@@ -383,6 +383,7 @@ class Configuration implements ConfigurationInterface
     {
         $node
             ->scalarNode('__transformer')->end()
+            ->scalarNode('__optional')->end()
             ->scalarNode('type')->defaultValue('string')->end()
             ->scalarNode('boost')->end()
             ->scalarNode('store')->end()
